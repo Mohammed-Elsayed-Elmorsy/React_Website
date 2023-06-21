@@ -1,0 +1,61 @@
+.ContactComponet.container {
+    align-items: center;
+    margin: 50px auto;
+}
+
+.container .left {
+    width: 50%;
+}
+
+.container .right-contact {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.container .right-contact>div {
+    border: 1px solid #dDD;
+    padding: 10px;
+    width: 47%;
+    transition: All 0.2s ease-in-out;
+}
+
+.container .right-contact>div:hover {
+    box-shadow: 0 0 10px #DDD;
+    transform: scale(1.08);
+}
+
+.container .right-contact>div:hover button {
+    background-image: var(--blue-gradient);
+    color: white;
+}
+
+.container .right-contact>div button {
+    display: block;
+    width: 100%;
+    transition: All 0.2s;
+    background-color: rgba(14, 88, 207, 0.309);
+}
+
+
+@media(max-width:991px) {
+    .ContactComponet {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container div.left {
+        width: 100%;
+    }
+
+    .container div.right-contact {
+        width: 100%;
+    }
+
+
+    div.container div.right-contact>div {
+        width: 100%;
+    }
+}
